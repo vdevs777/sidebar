@@ -2,6 +2,7 @@ import { ReactNode, useState } from "react";
 import { Button, buttonVariants } from "../../ui/button";
 import { VariantProps } from "class-variance-authority";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 interface SidebarOpenButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
